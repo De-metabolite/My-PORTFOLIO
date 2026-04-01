@@ -148,12 +148,17 @@ margin: 20px 0 40px;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
 }
 .service-list div i{
     font-size: 50px;
     margin-bottom: 30px;
-
+    color: #fff
 }
 
 .service-list div i h2{
@@ -168,3 +173,11 @@ margin: 20px 0 40px;
     margin-top: 20px;
     display: inline-block;
 }
+/* Portfolio */
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work-
