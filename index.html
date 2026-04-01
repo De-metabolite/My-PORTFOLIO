@@ -28,27 +28,95 @@
             
             </div>
         </div>
-    </div>
-    <div id="about">
+        <div id="about">
         <div class="container">
             <div class="row">
                 <div class="col1">
                     <img src="images/user.png" alt="User Image">
                 </div>
                 <div class="col2">
-                    <h1>About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
                   <p>Full Stack Engineer with expertise in React.js and .NET,focused on building scalable, high performance web applications. I deliver clean, efficient code and seamless user experiences by combining modern front-end development with robust back-end solutions. </p> 
-                <div class="background">
-                    <p class="tabs">Skills</p>
-                    <p class="tabs">Experience</p>
-                    <p class="tabs">Education</p>
+                <div class="tab-titles">
+                    <p class="tab-link active-link" onclick="opentab('skill')">Skills</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-link" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tabcontents active-tab" id="skill">
+                    <ul>
+                        <li><span>FullStack</span></li>
+                        <li>React.js, Javascript,Typescript , HTML, CSS</li>
+                        <li>.NET Core/ASP.NET Core, C#</li>
+                        <li>REST APIs, JWT Authentication</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="experience">
+                    <ul>
+                        <li><span>FullStack Engineer<br>Freelance/Personal Projects |    2023-Present</span></li>
+                        <li>Developed Scalable web applications  using React.js for frontend and ASP.NET core for backend.</li>
+                        <li>Designed and Consumed RESTFUL APIs to handle data exchange between clients and server.</li>
+                        <li>Implemented  secured authentication systems using JWT and role-based authorization.</li>
+                        <li>Built dynamic,responsive user interfaces with reusable React components.</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="education">
+                    <ul>
+                        <li><span>Academic Qualification and Certifications</span></li>
+                        <li> Crown Polytechnic, Ado Ekiti     | 2018-2024<br>HND  - Science Laboratory Technology (Microbiology Option) <br></li>
+                        <li> Zentrium Business Solutions  | Present<br>FullStack Web Development ( React.js and .NET)</li>
+                    </ul>
                 </div>
             </div>
-            <div class="deve">
                 
             </div>
         </div>
     </div>
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">
+                My Services
+            </div>
+            <div class="service-list">
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2><span>Web & Mobile App Developments</span></h2>
+                    <p>Building responsive and scalable websites/web apps.Handling both frontend and backend systems</p>
+                    <a href="">Learn more</a>
+                </div>
+    
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2><span>API Development $ Integration</span></h2>
+                    <p>Creating and Connecting RESTFUL services.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2><span>Database Design & Management</span></h2>
+                    <p>Structuring and managing data (SQL/NoSQL).</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-link");
+        var tabcontents= document.getElementsByClassName("tabcontents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
     
 </body>
 </html>
