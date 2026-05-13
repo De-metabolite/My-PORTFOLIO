@@ -6,12 +6,13 @@
 }
 
 body{
-background-color: #080808;
-    color: #fff;
+background-color: #F5F1EA;
+    color: #222222;
 }
 #header{
     width: 100%;
     height: 100vh;
+    background-color: #8B5E3C;
 }
 .background-container{
     display: flex;
@@ -21,7 +22,7 @@ background-color: #080808;
 .background{
     width: 32%;
     border-radius:10px;
-    background:#262626;
+    background:#CBB8A6;
     left:0;
     margin-top: 20px;
     
@@ -48,6 +49,7 @@ nav{
     font-size: 40px;
     font-weight: 600;
     transition: transform 0.5s;
+    color:white;
 }
 .logo .first-letter{
     color: #ff004f;
@@ -63,7 +65,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 18px;
     position:relative;
 
@@ -84,6 +86,7 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color:white;
 }
 
 .header-text h1{
@@ -95,13 +98,13 @@ nav ul li a:hover::after{
 }
 #about{
     padding:80px 0;
-    color:#ababab;
+    color:#222222;
 }
 .row{
     display: flex;
     margin-top: 70px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   ;
 }
 .col1{
     flex-basis: 35%;
@@ -117,7 +120,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 30px;
     font-weight: 600;
-    color:#fff;
+    color:#222222;
 }
 .tab-titles{
 display: flex;
@@ -168,7 +171,8 @@ margin: 20px 0 40px;
     margin-top: 50px;
 }
 .service-list div{
-    background: #262626;
+    background: #CBB8A6;
+    color: #222222;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -176,13 +180,13 @@ margin: 20px 0 40px;
     transition: background 0.5s, transform 0.5s;
 }
 .service-list div:hover{
-    background: #ff004f;
+    background: #B89F8A;
     transform: translateY(-10px);
 }
 .service-list div i{
     font-size: 50px;
     margin-bottom: 30px;
-    color: #fff
+    color: #8B5E3C
 }
 
 .service-list div i h2{
@@ -192,7 +196,7 @@ margin: 20px 0 40px;
 }
 .service-list div a{
     text-decoration: none;
-    color:#fff;
+    color:#8B5E3C;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -218,7 +222,7 @@ margin: 20px 0 40px;
 .layer{
     width:100%;
     height:0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #8B5E3C);
     border-radius: 10px;
     position: absolute;
     left:0;
@@ -233,13 +237,17 @@ margin: 20px 0 40px;
     font-size: 14px;
     transition: height 0.5S;
 }
+.layer p{
+    color:white;
+}
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
+    color: white;
 }
 .layer a {
       margin-top: 20px;
-      color:#ff004f;
+      color:#8B5E3C;
       text-decoration: none;
       font-size: 18px;
       line-height: 60px;
@@ -259,15 +267,38 @@ margin: 20px 0 40px;
     display:block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 2px solid #8B5E3C;
+    background: transparent;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #222222;
     transition: background 0.5s;
 }
+.btn a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 18px;
+}
+.btn a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
 .btn:hover{
-    background: #ff004f;
+    background: #8B5E3C;
+    color: white;
+}
+.footercontainer{
+    padding: 10px 10%;
+    background-color: #121212;
+    color: #D6D6D6;
+
+}
+.sub-titlecontactme{
+       font-size: 30px;
+    font-weight: 600;
+    color:#d6d6d6;
 }
 .contact-left{
     flex-basis: 35%;
@@ -279,7 +310,7 @@ margin: 20px 0 40px;
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #D6D6D6;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -289,18 +320,30 @@ margin: 20px 0 40px;
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
-    color:#ababab;
+    color: #d6d6d6;;
     margin-right: 15px;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
     transform:translateY(-5px);
-    color: #ff004f;
+    color: #8B5E3C;
 }
 .btn.btn2{
-    display: inline-block;
-    background: #ff004f;
+    display:inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #8B5E3C;
+    background: transparent;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #D6D6D6;
+    transition: background 0.5s;
+}
+.btn.btn2:hover{
+    background: #8B5E3C;
+    color: white;
 }
 .contact-right form{
     width:100%;
@@ -309,10 +352,10 @@ form input,form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: white;
     padding: 15px;
     margin: 15px 0;
-    color:#fff;
+    color:black;
     font-size: 18px;
     border-radius: 6px;
 
@@ -327,9 +370,10 @@ form .btn2{
     width:100%;
     text-align: center;
     padding: 15px 0;
-    background:#262626;
+    background: #d6b38a;
     font-weight: 300;
-    margin-top: 20px;
+    color: #222222;
+    
 }
 nav .fa-solid{
     display: none;
@@ -337,18 +381,21 @@ nav .fa-solid{
 #msg{
     display: block;
     margin-top: -20px;
-    color: #0a550a;
+    color: #d6d6d6;
     font-size: 18px;
 }
 
 /* For small screens */
 @media only screen and (max-width:600px){
-    #header{
-        background-image: url(images/phone-background.png);
-    
-    }
+   #header{
+    height: 70vh;
+    background-color: #121212;
+   }
+    .background{
+    display:none;
+}
     .header-text{
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 16px;
     }
     .header-text h1{
@@ -357,11 +404,13 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        color: white;
     }
     nav ul{
         background: #ff004f;
         position: fixed;
         top:0;
+        color:#d6d6d6;
         right:-200px;
         width:200px;
         height: 100vh;
